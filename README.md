@@ -1,6 +1,6 @@
 # react-custom-modal-ts
 
-> Made with create-react-library
+> Made with 🖤 by Felipe Almeida
 
 [![NPM](https://img.shields.io/npm/v/react-custom-modal-ts.svg)](https://www.npmjs.com/package/react-custom-modal-ts) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,12 +15,23 @@ npm install --save react-custom-modal-ts
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-custom-modal-ts'
-import 'react-custom-modal-ts/dist/index.css'
+import CustomModal from 'react-custom-modal-ts'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+    <>
+      <CustomModal
+        borderRadius={10}
+        setModalOpen={toggleModal}
+        modalVisible={modal}
+      >
+        <h1>CustomModal Example</h1>
+      </CustomModal>
+
+      <button onClick={handleOpenModal}>Open Modal</button>
+    </>
+    )
   }
 }
 ```

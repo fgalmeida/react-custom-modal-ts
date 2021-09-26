@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import CustomModal from './index'
 
-describe('ExampleComponent', () => {
+describe('CustomModal', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(CustomModal).toBeTruthy()
   })
 })
